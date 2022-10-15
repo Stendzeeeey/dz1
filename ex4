@@ -1,0 +1,29 @@
+Задание4 3-ий пункт
+
+
+#include <iostream>
+#include "math.h"
+
+using namespace std;
+
+double S3(int a, int b, int alpha) {
+	double alp = alpha * 3.14 / 180;
+	return 0.5 * a * b * sin(alp);
+}
+
+int main() {
+	double a, b, alpha;
+	setlocale(LC_ALL, "ru");
+	cout << "Введите стороны a, b и угол между ними соответственно:" << endl;
+	cout << "a = ";
+	cin >> a;
+	cout << "b = ";
+	cin >> b;
+	cout << "Угол = ";
+	cin >> alpha;
+	cout << "Площадь треугольника равна: " << round(S3(a, b, alpha) * 100) / 100 << endl; }
+
+	Проверки, где а, b, угол соотв:
+	1. (15, 10, 60) ответ: 64.93
+	2. (20, 52, 45) ответ: 367.55
+  3. (3, 4, 90) ответ: 6
