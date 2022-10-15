@@ -1,0 +1,34 @@
+#include <iostream>
+#include "pt4.h"
+using namespace std;
+
+
+void Solve()
+{
+	Task("TheOne20");
+	int x;
+	double V;
+	pt >> x >> V;
+	
+		switch (x)
+		{
+		case 1:
+			pt << V * 1048576;
+			break;
+		case 2:
+			pt << V * 1024;
+			break;
+		case 3:
+			pt << V;
+			break;
+		case 4:
+			pt << V * 13 / 100;
+			break;
+		case 5:
+			pt << V * 2;
+			break;
+		default:
+			break;
+		}
+
+}
