@@ -1,0 +1,22 @@
+Дано шестизначное число N. Определить, правда ли, что сумма первых 3-ех цифр равна произв 3-ех посл.
+#include <iostream>
+#include "pt4.h"
+#include <math.h>
+using namespace std;
+
+
+void Solve()
+{
+	Task("One42");
+	int n, n1, n2, n3, n4, n5, n6, s, u;
+	pt >> n;
+	n1 = n / 100000;
+	n2 = n % 100000 / 10000;
+	n3 = n % 10000 / 1000;
+	n4 = n % 1000 / 100;
+	n5 = n % 100 / 10;
+	n6 = n % 10;
+	s = n1 + n2 + n3;
+	u = n4 * n5 * n6;
+    pt << (s == u);
+}
