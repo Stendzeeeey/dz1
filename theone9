@@ -1,0 +1,12 @@
+#include <iostream>
+#include "pt4.h"
+#include <math.h>
+using namespace std;
+
+
+void Solve()
+{
+	Task("TheOne9");
+	float x, y;
+	pt >> x >> y;
+	pt << (x * x + y * y <= 16 && y >= 0 && x >= -2);
